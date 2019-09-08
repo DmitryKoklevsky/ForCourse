@@ -14,4 +14,18 @@ public class Page {
     private float id;
     private String title;
 
+    public void addElementArrayList(Button object, ArrayList<Button> buttons)
+    {
+        buttons.add(object);
+    }
+
+    public void addLabelElement(Label object, HashSet<Label> labels)
+    {
+        labels.add(object);
+    }
+    public void removeLabelElement(Label object, HashSet<Label> labels)
+    {
+        labels.remove(object);
+    }
+
 }

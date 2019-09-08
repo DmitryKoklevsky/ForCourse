@@ -36,9 +36,20 @@ public class Main {
         }
         Label firstName = new Label("first name");
         Label lastName = new Label("last name");
-        labels.add(firstName);
-        labels.add(lastName);
-        
+       //labels.add(firstName);
+        //labels.add(lastName);
+        Page page = new Page();
+
+        page.addLabelElement(firstName, labels);
+        page.addLabelElement(lastName, labels);
+        page.removeLabelElement(lastName, labels);
+        for (Label label : labels) {
+            System.out.println(labels);
+        }
+
+
+
 
     }
+
 }
